@@ -1,0 +1,31 @@
+# vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+<!-- 
+# TODO: Add <buffer> key
+# TODO: Add <timezone> +awareness 
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<provider>
+  <streamer>
+    <name>ustream.tv-nasa</name>
+    <url>rtmp://cp39920.live.edgefcs.net/live</url>
+    <swfUrl>http://static-cdn1.ustream.tv/swf/live/viewer.swf</swfUrl>
+    <streams>
+        <source>
+            <enabled>true</enabled>
+            <title>Live ISS Stream</title>
+            <description></descriptions>
+            <location>
+                <city></city>
+                <state></state>
+                <country>United States</country>
+                <coordinates>
+                    <lat></lat>
+                    <lon></lon>
+                </coordinates>
+            </location>
+            <playpath>ustream-lax@11170</playpath>
+        </source>
+    </streams>
+  </streamer>
+</provider>
