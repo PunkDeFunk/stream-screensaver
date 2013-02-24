@@ -25,12 +25,10 @@ rtmpdump
 2 - setup xscreensaver. 
 vi ~/.xscreensaver 
 Insert after your last screensaver 
-         "Stream ScreenSaver"                                                \
-                                  ~/stream-screensaver/stream.py   \
-                                  $XSCREENSAVER_WINDOW                      \n\
+"Stream ScreenSaver" /path/to/bin/stream-screensaver/stream.py $XSCREENSAVER_WINDOW \n\
 
 3 - Enable screensaver using xscreensaver-demo
-Select Stream ScreenSaver
+Select Stream Screensaver in xscreensaver-demo
 
 4 - Lock your session and see if it works. 
-It might take some time to load the stream.  
+It might take some time to load the stream.
