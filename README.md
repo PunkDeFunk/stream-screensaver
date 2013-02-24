@@ -7,7 +7,9 @@ Make sure that you understand the terms and conditions of websites you are strea
 
 #TARGETS: 
 ustream.tv
-earthcam
+earthcam.com
+justin.tv (?)
+Anything you can think of...
 
 #SUPPORT:
 Linux
@@ -18,5 +20,17 @@ mplayer
 rtmpdump 
 
 #HOWTO: 
-1 - get the rtmp stream address using voodoo magic (or simply use ustream-recorder to get the rtmp stream information - https://github.com/kenorb/UStream-recorder)
+1 - get the rtmp stream address using voodoo magic (or simply use ustream-recorder to get the rtmp stream information - https://github.com/kenorb/UStream-recorder) -- Soon information will be in XML files... 
 
+2 - setup xscreensaver. 
+vi ~/.xscreensaver 
+Insert after your last screensaver 
+         "Stream ScreenSaver"                                                \
+                                  ~/stream-screensaver/stream.py   \
+                                  $XSCREENSAVER_WINDOW                      \n\
+
+3 - Enable screensaver using xscreensaver-demo
+Select Stream ScreenSaver
+
+4 - Lock your session and see if it works. 
+It might take some time to load the stream.  
