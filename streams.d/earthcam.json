@@ -106,7 +106,7 @@
             "playpath": "eclasvegas.flv"
           },
           {
-            "enabled": "true",
+            "enabled": "false",
             "title": "Las Vegas - Hotel Monte Carlo",
             "description": "Streaming video of the Monte Carlo's pool",
             "location": {
