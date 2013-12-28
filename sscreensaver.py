@@ -2,6 +2,9 @@
 ### IMP 
 # https://wiki.ubuntu.com/Novacut/GStreamer1.0#element_link_many.28.29
 
+import os
+script_path=os.path.dirname(os.path.realpath(__file__))
+
 import pygst
 pygst.require("0.10")
 import gst
@@ -11,16 +14,16 @@ import sys
 import traceback
 import json
 from pprint import pprint
+
 from random import choice
 import random
 
-
-stream = 'streams.d/earthcam.json'
+streams_file = 'streams.d/earthcam.json'
 
 def getRandomVideo():
 	
 	# Open JSON
-	stream_file = open(stream,'r')
+	stream_file = open(script_path + "/" + streams_file,'r')
 	stream_data = json.load(stream_file)
 	rtmp_url = stream_data["provider"]["streamer"]["url"]
 	swfUrl = stream_data["provider"]["streamer"]["swfUrl"]
