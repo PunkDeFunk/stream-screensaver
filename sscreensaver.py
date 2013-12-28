@@ -12,9 +12,10 @@ import traceback
 import json
 from pprint import pprint
 from random import choice
+import random
 
 
-stream = 'earthcam.json'
+stream = 'streams.d/earthcam.json'
 
 def getRandomVideo():
 	
@@ -23,16 +24,17 @@ def getRandomVideo():
 	stream_data = json.load(stream_file)
 	rtmp_url = stream_data["provider"]["streamer"]["url"]
 	swfUrl = stream_data["provider"]["streamer"]["swfUrl"]
-	
+
 	selection = []
 	for source in stream_data["provider"]["streamer"]["streams"]["source"]:
 		# select only enabled videos
 		if source["enabled"] == 'true':
 			selection.append(source)
+
 	# return random video
-	random.jumpahead()
+	random.jumpahead(1)
 	select = choice(selection)
-	uri = rtmp_url + ' swfURL=' + swfUrl + ' playpath=' + select["playpath"] + ' live=true buffer=2000'
+	uri = rtmp_url + ' swfURL=' + swfUrl + ' playpath=' + select["playpath"] + ' live=true buffer=20000'
 	print uri
 	return uri
 
@@ -45,8 +47,8 @@ class Main:
 
 		self.rtmpsrc = gst.element_factory_make("rtmpsrc", "rtmpstream")
 
-#		self.rtmpsrc.set_uri(getRandomVideo())
-		self.rtmpsrc.set_uri("rtmp://video2.earthcam.com/fecnetwork swfUrl=http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf playpath=4931.flv live=true")
+		self.rtmpsrc.set_uri(getRandomVideo())
+#		self.rtmpsrc.set_uri("rtmp://video2.earthcam.com/fecnetwork swfUrl=http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf playpath=4931.flv live=true buffer=200000")
 
 		# first channel
 		self.flvdemux = gst.element_factory_make("flvdemux", "flvdemux")
@@ -100,37 +102,3 @@ try:
 		gtk.main()
 except: 
 	traceback.print_exc(file=sys.stdout)
-
-### JUNKYARD
-		# channel 2
-#		self.multisrc.link(self.jpegdec)
-#		self.jpegdec.link(self.videobox2)
-#		self.videobox2.link(self.videomix)
-		# Second channel 	
-		
-#		self.multisrc = gst.element_factory_make("multifilesrc", "multi")
-
-#		self.multisrc.set_property("location", "image.jpeg") 
-#		self.jpegdec = gst.element_factory_make("jpegdec", "jpegdec")
-
-#		self.videobox2 = gst.element_factory_make("videobox", "videobox2")
-#		self.videobox2.set_property("alpha", 0.5)
-#		self.videobox2.set_property("border-alpha", 0)
-
-#		self.pipeline = gst.parse_launch("rtmpsrc location='rtmp://video2.earthcam.com/fecnetwork/ swfUrl=http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf playpath=hotelvictoria2.flv live=true buffer=20000' ! queue !  flvdemux ! queue  ! decodebin ! queue ! xvimagesink") 
-
-#stream    = gst_element_factory_make ("rtmpsrc", "my_stream");
-#decoder   = gst_element_factory_make ("mad", "my_decoder");
-#converter = gst_element_factory_make ("audioconvert", "audioconvert1");
-#filter    = gst_element_factory_make ("my_filter", "my_filter");
-#convert2  = gst_element_factory_make ("audioconvert", "audioconvert2");
-#resample  = gst_element_factory_make ("audioresample", "audioresample");
-#sink      = gst_element_factory_make ("pulsesink", "audiosink");
-	
-#	pipeline2 = gst.parse_launch ("rtmpsrc location='rtmp://video2.earthcam.com/fecnetwork/ swfUrl=http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf Playpath=hotelvictoria2.flv live=true buffer=20000' ! queue !  flvdemux ! queue  ! decodebin")
-#	sink2 = gst.element_factory_make("xvimagesink", "sink")
-#	pipeline2.add(sink2)
-#	pipeline2.set_state(gst.STATE_PLAYING)
-
-# This is the gstlaunch used to read the video using 
-# gst-launch-0.10 -v rtmpsrc location='rtmp://video2.earthcam.com/fecnetwork/ swfUrl=http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf playpath=hotelvictoria2.flv live=true buffer=20000' ! queue !  flvdemux ! queue  ! decodebin ! queue ! xvimagesink force-aspect-ratio=true 

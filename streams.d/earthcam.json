@@ -419,7 +419,7 @@
             "playpath": "3478.flv"
           },
           {
-            "enabled": "false",
+            "enabled": "true",
             "title": "Hollywood Blvd Cam",
             "location": {
               "city": "Los Angeles",
