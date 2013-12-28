@@ -32,7 +32,6 @@ def getRandomVideo():
 			selection.append(source)
 
 	# return random video
-	random.jumpahead(1)
 	select = choice(selection)
 	uri = rtmp_url + ' swfURL=' + swfUrl + ' playpath=' + select["playpath"] + ' live=true buffer=20000'
 	print uri
@@ -61,7 +60,7 @@ class Main:
 
 		self.textoverlay = gst.element_factory_make("textoverlay", "textoverlay")
 		self.textoverlay.set_property("text", "Stream Screensaver 0.2")
-		self.textoverlay.set_property("font-desc", "Sans 6")
+		self.textoverlay.set_property("font-desc", "Sans 4")
 		self.textoverlay.set_property("halignment", 0)
 		self.textoverlay.set_property("valignment", 1)
 
