@@ -27,5 +27,22 @@
             <playpath>ustream-lax@11170</playpath>
         </source>
     </streams>
+    <streams>
+        <source>
+            <enabled>true</enabled>
+            <title>Live ISS Stream</title>
+            <description></descriptions>
+            <location>
+                <city></city>
+                <state></state>
+                <country>United States</country>
+                <coordinates>
+                    <lat></lat>
+                    <lon></lon>
+                </coordinates>
+            </location>
+            <playpath>stream_live_1_1_9408562</playpath>
+        </source>
+    </streams>
   </streamer>
 </provider>

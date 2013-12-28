@@ -1,0 +1,438 @@
+{
+  "provider": {
+    "streamer": {
+      "name": "earthcam.com",
+      "url": "rtmp://video2.earthcam.com/fecnetwork",
+      "swfUrl": "http://www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf",
+      "streams": {
+        "source": [
+          {
+            "enabled": "true",
+            "title": "Times Square Street Cam",
+            "description": "Times Square - Street Cam",
+            "location": {
+              "city": "New York City",
+              "state": "New York",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "hdtimes11.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Times Square - Crowd Cam",
+            "description": "Times Square - Crowd Cam",
+            "location": {
+              "city": "New York City",
+              "state": "New York",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "hdtimes13.flv",
+            "buffer": "8096"
+          },
+          {
+            "enabled": "true",
+            "title": "Times Square - Crossroads",
+            "description": "Times Square Crossroads",
+            "location": {
+              "city": "New York City",
+              "state": "New York",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4717.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Times Square - South View",
+            "description": "Times Square South View",
+            "location": {
+              "city": "New York City",
+              "state": "New York",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4017timessquare.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Times Square - 47th and Broadway",
+            "description": "Times Square 47th and Broadway",
+            "location": {
+              "city": "New York City",
+              "state": "New York",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "hdtimes10.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Eiffel Tower",
+            "description": "Streaming video of the Eiffel Tower",
+            "location": {
+              "city": "Paris",
+              "state": "Paris",
+              "country": "France",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "eiffelcamHD.flv"
+          },
+          {
+            "enabled": "true",
+            "title": " Las Vegas - Welcome to Fabulous...",
+            "description": "Streaming video of the famous sign",
+            "location": {
+              "city": "Las Vegas",
+              "state": "Nevada",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "eclasvegas.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Las Vegas - Hotel Monte Carlo",
+            "description": "Streaming video of the Monte Carlo's pool",
+            "location": {
+              "city": "Las Vegas",
+              "state": "Nevada",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "monte_carlo.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Budapest - Hotel Victoria 2",
+            "location": {
+              "city": "Budapest",
+              "state": "?",
+              "country": "Hungary",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "hotelvictoria2.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Sydney",
+            "location": {
+              "city": "Sydney",
+              "state": "?",
+              "country": "Australia",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4931.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Bangkok",
+            "location": {
+              "city": "Bangkok",
+              "state": "?",
+              "country": "Thailand",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "5034.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Hamburg - Fairmont Hotel",
+            "location": {
+              "city": "Hamburg",
+              "state": "?",
+              "country": "Germany",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "3847fairmont.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Amman - City",
+            "location": {
+              "city": "Amman",
+              "state": "?",
+              "country": "Jordan",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4518.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Amman - Citadel",
+            "location": {
+              "city": "Amman",
+              "state": "?",
+              "country": "Jordan",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4516.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Amman - Dead Sea",
+            "location": {
+              "city": "Amman",
+              "state": "?",
+              "country": "Jordan",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4517.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Prague - Old town clock",
+            "location": {
+              "city": "Prague",
+              "state": "?",
+              "country": "Czech Republic",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4162.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "London - Abbey Road ",
+            "location": {
+              "city": "London",
+              "state": "?",
+              "country": "England",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "AbbeyRoadHD1.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Anguilla - Meads Bay",
+            "location": {
+              "city": "Meads Bay",
+              "state": "?",
+              "country": "Anguilla",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "anguilla.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Rio de Janiero - City from a distance...",
+            "location": {
+              "city": "Rio de Janiero",
+              "state": "?",
+              "country": "Brazil",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "brazil1.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Sao Paulo - City 1",
+            "location": {
+              "city": "Sao Paulo",
+              "state": "?",
+              "country": "Brazil",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "saopaulo.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Sao Paulo - City 2",
+            "location": {
+              "city": "Sao Paulo",
+              "state": "?",
+              "country": "Brazil",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "terraco.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Greece - Thassos City",
+            "location": {
+              "city": "Thassos",
+              "state": "?",
+              "country": "Greece",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "3792.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Indonesia - Elephant Bathing Pool",
+            "location": {
+              "city": "Bali",
+              "state": "?",
+              "country": "Indonesia",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4337.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Dublin Pub",
+            "location": {
+              "city": "Dublin",
+              "state": "?",
+              "country": "Ireland",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4054.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Tokyo City",
+            "location": {
+              "city": "Tokyo",
+              "state": "?",
+              "country": "Japan",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "tokyo1.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Bocaray Island",
+            "location": {
+              "city": "Bocaray",
+              "state": "?",
+              "country": "Philippines",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "5026.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Moscow Skyline 1 (HD)",
+            "location": {
+              "city": "Moscow",
+              "state": "?",
+              "country": "Russia",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "moscowHD1.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Moscow - Pavelstakaya tower",
+            "location": {
+              "city": "Moscow",
+              "state": "?",
+              "country": "Russia",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "moscowMDM1.flv"
+          },
+          {
+            "enabled": "true",
+            "title": "Istanbul - Hagia Sophia",
+            "location": {
+              "city": "Istanbul",
+              "state": "?",
+              "country": "Turkey",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4828.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "St. Croix - Virgin Islands",
+            "location": {
+              "city": "St. Croix",
+              "state": "?",
+              "country": "Virgin Islands",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "4880.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Mission Beach Cam",
+            "location": {
+              "city": "Los Angeles",
+              "state": "?",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "3478.flv"
+          },
+          {
+            "enabled": "false",
+            "title": "Hollywood Blvd Cam",
+            "location": {
+              "city": "Los Angeles",
+              "state": "?",
+              "country": "United States",
+              "coordinates": {
+                
+              }
+            },
+            "playpath": "lacitytours1.flv"
+          }
+        ]
+      }
+    }
+  }
+}
